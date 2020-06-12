@@ -60,7 +60,7 @@ async (req, res) => {
     }
 
     jwt.sign(
-        payload, 
+        payload, //payload
         config.get('jwtSecret'), //passing the secret
         { expiresIn: 360000 },
         (err, token) => {
